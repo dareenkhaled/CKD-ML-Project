@@ -23,9 +23,6 @@ Random Forest was selected as the final model because it achieved the best overa
 - scaler.pkl → Saved scaler model
 - requirements.txt → Required Python libraries
 
-## Deployment Link
-
-https://ckd-ml-project-kvvbcivm5si5jcu7vmqwz.streamlit.app/
 
 ## Conclusion
 
