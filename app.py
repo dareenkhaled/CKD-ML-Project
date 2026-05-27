@@ -1,30 +1,30 @@
-
 import streamlit as st
-import joblib
-import numpy as np
 
-# Load the saved model and scaler
-model = joblib.load("kidney_model.pkl")
-scaler = joblib.load("scaler.pkl")
+st.title("Chronic Kidney Disease Prediction Using Machine Learning")
 
-st.title("🔬 Kidney Disease Prediction App")
+st.write("""
+This web app is part of a machine learning project for predicting chronic kidney disease risk
+using clinical and laboratory patient data.
+""")
 
-# Input form
-age = st.number_input("Age", 0, 120)
-bp = st.number_input("Blood Pressure", 0, 200)
-sg = st.number_input("Specific Gravity", 1.0, 1.030, step=0.001)
-al = st.number_input("Albumin", 0, 5)
-su = st.number_input("Sugar", 0, 5)
-bgr = st.number_input("Blood Glucose Random", 0, 500)
-bu = st.number_input("Blood Urea", 0, 200)
-sc = st.number_input("Serum Creatinine", 0.0, 15.0, step=0.1)
+st.header("Project Workflow")
+st.write("""
+- Data cleaning and preprocessing
+- Exploratory data analysis
+- Feature engineering and selection
+- Model training using different algorithms
+- Model evaluation using accuracy, precision, recall, F1-score, and confusion matrix
+- Deployment using Streamlit
+""")
 
-if st.button("Predict"):
-    user_data = np.array([[age, bp, sg, al, su, bgr, bu, sc]])
-    user_scaled = scaler.transform(user_data)
-    prediction = model.predict(user_scaled)[0]
+st.header("Best Model")
+st.write("""
+The Random Forest model was selected as the final model because it achieved strong performance
+compared with the other tested algorithms.
+""")
 
-    if prediction == 1:
-        st.error("⚠️ High risk of kidney disease!")
-    else:
-        st.success("✅ Low risk of kidney disease.")
+st.header("Conclusion")
+st.write("""
+The project shows how machine learning can support medical risk prediction using patient data.
+The model can help classify patients based on kidney disease risk.
+""")
