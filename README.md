@@ -30,7 +30,7 @@ This project demonstrates how machine learning can support medical prediction sy
 
 ## Video Explanation
 
-Add your Google Drive video link here.
+[Add your Google Drive video link here.](https://drive.google.com/file/d/15MGIp5il5o5XxJe3lx62wnX8Ik7I7WfU/view?usp=sharing)
 
 ## Deployment Link
 https://ckd-ml-project-kvvvbciwn5si5jcu7vmqwz.streamlit.app/
