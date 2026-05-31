@@ -29,8 +29,7 @@ Random Forest was selected as the final model because it achieved the best overa
 This project demonstrates how machine learning can support medical prediction systems using patient clinical data. The trained model can help classify patients based on chronic kidney disease risk with good performance.
 
 ## Video Explanation
-
-[Add your Google Drive video link here.](https://drive.google.com/file/d/15MGIp5il5o5XxJe3lx62wnX8Ik7I7WfU/view?usp=sharing)
+(https://drive.google.com/file/d/15MGIp5il5o5XxJe3lx62wnX8Ik7I7WfU/view?usp=sharing)
 
 ## Deployment Link
 https://ckd-ml-project-kvvvbciwn5si5jcu7vmqwz.streamlit.app/
